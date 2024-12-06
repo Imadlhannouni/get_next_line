@@ -6,7 +6,7 @@
 /*   By: ilhannou <ilhannou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 14:46:23 by ilhannou          #+#    #+#             */
-/*   Updated: 2024/12/06 18:32:31 by ilhannou         ###   ########.fr       */
+/*   Updated: 2024/12/06 18:38:20 by ilhannou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -101,18 +101,3 @@ char	*get_next_line(int fd)
 	update_reminder(line, &reminder);
 	return (line);
 }
-
-// int	main()
-// {
-// 	int		fd;
-// 	char	*line;
-
-// 	fd = open("test_file.txt", O_RDONLY);
-// 	while ((line = get_next_line(fd)) != NULL)
-// 	{
-// 		printf("%s", line);
-// 		free(line);
-// 	}
-// 	close(fd);
-// 	return (0);
-// }

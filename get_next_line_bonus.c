@@ -6,7 +6,7 @@
 /*   By: ilhannou <ilhannou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/03 15:45:32 by ilhannou          #+#    #+#             */
-/*   Updated: 2024/12/06 15:51:29 by ilhannou         ###   ########.fr       */
+/*   Updated: 2024/12/06 18:38:16 by ilhannou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -101,56 +101,3 @@ char	*get_next_line(int fd)
 	update_reminder(line, &reminder[fd]);
 	return (line);
 }
-
-// int main(void)
-// {
-//     int fd1, fd2, fd3;
-//     char *line;
-//     fd1 = open("file1.txt", O_RDONLY);
-//     fd2 = open("file2.txt", O_RDONLY);
-//     fd3 = open("file3.txt", O_RDONLY);
-//     if (fd1 < 0 || fd2 < 0 || fd3 < 0)
-//     {
-//         perror("Error opening file");
-//         return (1);
-//     }
-//     while (1)
-//     {
-//         line = get_next_line(fd1);
-//         if (line)
-//         {
-//             printf("File 1: %s", line);
-//             free(line);
-//         }
-//         else
-//         {
-//             printf("File 1: EOF\n");
-//         }
-//         line = get_next_line(fd2);
-//         if (line)
-//         {
-//             printf("File 2: %s", line);
-//             free(line);
-//         }
-//         else
-//         {
-//             printf("File 2: EOF\n");
-//         }
-//         line = get_next_line(fd3);
-//         if (line)
-//         {
-//             printf("File 3: %s", line);
-//             free(line);
-//         }
-//         else
-//         {
-//             printf("File 3: EOF\n");
-//         }
-//         if (!line)
-//             break;
-//     }
-//     close(fd1);
-//     close(fd2);
-//     close(fd3);
-//     return (0);
-// }
