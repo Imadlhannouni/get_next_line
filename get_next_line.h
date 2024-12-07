@@ -6,7 +6,7 @@
 /*   By: ilhannou <ilhannou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 17:36:28 by ilhannou          #+#    #+#             */
-/*   Updated: 2024/12/06 15:46:22 by ilhannou         ###   ########.fr       */
+/*   Updated: 2024/12/07 15:45:27 by ilhannou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 # define GET_NEXT_LINE_H
 
 # ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 6
+#  define BUFFER_SIZE 42
 # endif
 
 # include <sys/types.h>
