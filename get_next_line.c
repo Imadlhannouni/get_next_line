@@ -6,15 +6,11 @@
 /*   By: ilhannou <ilhannou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 14:46:23 by ilhannou          #+#    #+#             */
-/*   Updated: 2024/12/07 15:45:00 by ilhannou         ###   ########.fr       */
+/*   Updated: 2024/12/08 13:25:29 by ilhannou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
-#include <stdlib.h>
-#include <unistd.h>
-#include <fcntl.h>
-#include <stdio.h>
 
 static char	*get_line_from_reminder(t_list **reminder)
 {
@@ -60,7 +56,7 @@ static void	update_reminder(char *line, t_list **reminder)
 		*reminder = NULL;
 }
 
-char	*read_and_assemble_line(int fd, char *line)
+static char	*read_and_assemble_line(int fd, char *line)
 {
 	ssize_t	bytes_r;
 	char	*buffer;

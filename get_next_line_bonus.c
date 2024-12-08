@@ -6,7 +6,7 @@
 /*   By: ilhannou <ilhannou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/03 15:45:32 by ilhannou          #+#    #+#             */
-/*   Updated: 2024/12/06 18:38:16 by ilhannou         ###   ########.fr       */
+/*   Updated: 2024/12/08 13:24:54 by ilhannou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,7 +60,7 @@ static void	update_reminder(char *line, t_list **reminder)
 		*reminder = NULL;
 }
 
-char	*read_and_assemble_line(int fd, char *line)
+static char	*read_and_assemble_line(int fd, char *line)
 {
 	ssize_t	bytes_r[1024];
 	char	*buffer;
